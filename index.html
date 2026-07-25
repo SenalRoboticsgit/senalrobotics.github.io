@@ -1,24 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Senal Robotics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Senal Robotics</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0b1020;
+color:white;
+text-align:center;
+}
+
+header{
+padding:80px 20px;
+background:linear-gradient(135deg,#1d2671,#c33764);
+}
+
+header h1{
+font-size:55px;
+}
+
+header p{
+font-size:22px;
+margin-top:10px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 35px;
+background:#00e5ff;
+color:black;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+}
+
+section{
+padding:60px 20px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.card{
+background:#1a2238;
+padding:25px;
+width:280px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+footer{
+padding:25px;
+background:#111;
+margin-top:40px;
+}
+</style>
+
 </head>
-<body style="background:black;color:white;text-align:center;font-family:Arial;">
-    <h1>🤖 Senal Robotics</h1>
 
-    <h2>Welcome to My Robotics Website</h2>
+<body>
 
-    <p>Grade 7 Robotics Student from Sri Lanka</p>
+<header>
 
-    <p>ESP32 | Arduino | AI | IoT</p>
+<h1>🤖 Senal Robotics</h1>
 
-    <h3>Projects</h3>
+<p>Building the Future with Robotics, AI & IoT</p>
 
-    <p>🚜 Smart Agriculture Rover</p>
+<a href="#projects" class="btn">View My Projects</a>
 
-    <p>🚗 Bluetooth Robot Car</p>
+</header>
 
-    <p>🤖 Obstacle Avoiding Robot</p>
+<section>
+
+<h2>About Me</h2>
+
+<br>
+
+<p>
+Hi! I'm <b>Senal</b>, a Grade 7 Robotics Student from Sri Lanka.
+I love building ESP32, Arduino, AI and IoT projects.
+</p>
+
+</section>
+
+<section id="projects">
+
+<h2>My Projects</h2>
+
+<br><br>
+
+<div class="cards">
+
+<div class="card">
+<h3>🚜 Smart Agriculture Rover</h3>
+<p>AI based farming robot.</p>
+</div>
+
+<div class="card">
+<h3>🚗 Bluetooth Robot Car</h3>
+<p>Controlled using Bluetooth.</p>
+</div>
+
+<div class="card">
+<h3>🤖 Obstacle Avoiding Robot</h3>
+<p>Automatic obstacle detection robot.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Senal Robotics © 2026</h3>
+
+<p>Made with ❤️ in Sri Lanka</p>
+
+</footer>
 
 </body>
 </html>
