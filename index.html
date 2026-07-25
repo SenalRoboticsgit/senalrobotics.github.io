@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,70 +7,70 @@
 <title>Senal Robotics</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
 body{
-background:#0b1020;
+margin:0;
+font-family:Arial,sans-serif;
+background:#07111f;
 color:white;
-text-align:center;
 }
 
 header{
+text-align:center;
 padding:80px 20px;
-background:linear-gradient(135deg,#1d2671,#c33764);
+background:linear-gradient(135deg,#001f54,#003566,#00509d);
 }
 
-header h1{
-font-size:55px;
+h1{
+font-size:60px;
+margin-bottom:10px;
 }
 
-header p{
+.subtitle{
 font-size:22px;
-margin-top:10px;
+color:#bde0fe;
 }
 
-.btn{
+.button{
 display:inline-block;
 margin-top:25px;
 padding:15px 35px;
 background:#00e5ff;
 color:black;
-text-decoration:none;
 border-radius:40px;
+text-decoration:none;
 font-weight:bold;
 }
 
 section{
 padding:60px 20px;
+max-width:1100px;
+margin:auto;
 }
 
 .cards{
 display:flex;
-justify-content:center;
 flex-wrap:wrap;
-gap:20px;
+justify-content:center;
+gap:25px;
 }
 
 .card{
-background:#1a2238;
+background:#10243f;
 padding:25px;
-width:280px;
 border-radius:15px;
-transition:0.3s;
+width:300px;
+box-shadow:0 0 15px rgba(0,229,255,.3);
+transition:.3s;
 }
 
 .card:hover{
-transform:scale(1.05);
+transform:translateY(-8px);
 }
 
 footer{
-padding:25px;
-background:#111;
+background:#02101f;
+padding:30px;
+text-align:center;
 margin-top:40px;
 }
 </style>
@@ -82,57 +83,67 @@ margin-top:40px;
 
 <h1>🤖 Senal Robotics</h1>
 
-<p>Building the Future with Robotics, AI & IoT</p>
+<p class="subtitle">
+Building the Future with Robotics, AI & IoT
+</p>
 
-<a href="#projects" class="btn">View My Projects</a>
+<a class="button" href="#projects">Explore Projects</a>
 
 </header>
 
 <section>
 
-<h2>About Me</h2>
-
-<br>
+<h2>👦 About Me</h2>
 
 <p>
-Hi! I'm <b>Senal</b>, a Grade 7 Robotics Student from Sri Lanka.
-I love building ESP32, Arduino, AI and IoT projects.
+Hello! My name is <b>Senal</b>.
+I'm a Grade 7 student from Sri Lanka who loves Robotics,
+ESP32, Arduino, Artificial Intelligence and IoT.
+My dream is to build amazing robots that help people.
 </p>
 
 </section>
 
 <section id="projects">
 
-<h2>My Projects</h2>
-
-<br><br>
+<h2>🚀 My Projects</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>🚜 Smart Agriculture Rover</h3>
-<p>AI based farming robot.</p>
+<p>AI-powered farming robot with sensors and automation.</p>
 </div>
 
 <div class="card">
 <h3>🚗 Bluetooth Robot Car</h3>
-<p>Controlled using Bluetooth.</p>
+<p>ESP32 robot controlled using Bluetooth.</p>
 </div>
 
 <div class="card">
 <h3>🤖 Obstacle Avoiding Robot</h3>
-<p>Automatic obstacle detection robot.</p>
+<p>Automatically detects and avoids obstacles.</p>
 </div>
 
 </div>
 
 </section>
 
+<section>
+
+<h2>📞 Contact</h2>
+
+<p>GitHub: SenalRoboticsgit</p>
+
+<p>Sri Lanka 🇱🇰</p>
+
+</section>
+
 <footer>
 
-<h3>Senal Robotics © 2026</h3>
+<h3>© 2026 Senal Robotics</h3>
 
-<p>Made with ❤️ in Sri Lanka</p>
+<p>Made with ❤️ by Senal</p>
 
 </footer>
 
