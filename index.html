@@ -6,12 +6,13 @@
 <title>Senal Robotics</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:Arial,sans-serif;
 scroll-behavior:smooth;
-font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
@@ -20,28 +21,27 @@ color:white;
 }
 
 nav{
-position:fixed;
-top:0;
-left:0;
-width:100%;
 background:#081b36;
+padding:18px;
+position:fixed;
+width:100%;
+top:0;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:18px 50px;
-box-shadow:0 0 15px #00d9ff55;
-z-index:999;
 }
 
 .logo{
 font-size:28px;
 font-weight:bold;
 color:#00d9ff;
+margin-left:20px;
 }
 
 nav ul{
 display:flex;
 list-style:none;
+margin-right:20px;
 }
 
 nav ul li{
@@ -60,88 +60,71 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:linear-gradient(135deg,#081329,#0f3d75,#051221);
-padding:20px;
+background:linear-gradient(135deg,#071329,#103b73);
 }
 
 .hero h1{
-font-size:65px;
-margin-bottom:20px;
+font-size:60px;
 }
 
 .hero p{
 font-size:22px;
-margin-bottom:30px;
+margin:20px 0;
 }
 
-.btn{
-display:inline-block;
-padding:15px 40px;
+.button{
+padding:15px 35px;
 background:#00d9ff;
 color:black;
 text-decoration:none;
-border-radius:40px;
+border-radius:30px;
 font-weight:bold;
 }
 
 section{
 padding:80px 20px;
-max-width:1100px;
+max-width:1000px;
 margin:auto;
 }
 
 h2{
 text-align:center;
-color:#00d9ff;
 margin-bottom:35px;
 font-size:40px;
+color:#00d9ff;
 }
 
-.about-box{
+.about{
 background:#10284d;
-padding:35px;
+padding:40px;
 border-radius:20px;
-box-shadow:0 0 20px rgba(0,217,255,.25);
 text-align:center;
 line-height:35px;
-font-size:20px;
+box-shadow:0 0 20px rgba(0,217,255,.2);
 }
 
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:#10284d;
-padding:25px;
-border-radius:15px;
-box-shadow:0 0 15px rgba(0,217,255,.2);
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.photo{
-height:180px;
-background:#18375d;
+.skills{
 display:flex;
 justify-content:center;
-align-items:center;
-border-radius:15px;
-font-size:24px;
+flex-wrap:wrap;
+gap:15px;
+margin-top:25px;
+}
+
+.skill{
+background:#00d9ff;
+color:black;
+padding:12px 18px;
+border-radius:30px;
+font-weight:bold;
 }
 
 footer{
 background:#02101f;
-padding:20px;
 text-align:center;
-margin-top:40px;
+padding:20px;
 }
+
 </style>
 
 </head>
@@ -155,9 +138,6 @@ margin-top:40px;
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#contact">Contact</a></li>
 </ul>
 
 </nav>
@@ -170,7 +150,7 @@ margin-top:40px;
 
 <p>Building the Future with Robotics, AI & IoT</p>
 
-<a href="#projects" class="btn">Explore My Projects</a>
+<a class="button" href="#about">About Me</a>
 
 </div>
 
@@ -180,97 +160,47 @@ margin-top:40px;
 
 <h2>About Me</h2>
 
-<div class="about-box">
+<div class="about">
 
 <h3>👋 Hello! I'm Senal</h3>
 
 <br>
 
-<p>🇱🇰 Grade 7 Robotics Student from Sri Lanka</p>
+<p>
+🇱🇰 I am a Grade 7 Robotics Student from Sri Lanka.
+</p>
 
 <br>
 
-<p>I enjoy building robots using ESP32, Arduino, Artificial Intelligence and IoT.</p>
+<p>
+I enjoy designing and building robots using ESP32, Arduino, Artificial Intelligence (AI), and Internet of Things (IoT).
+</p>
 
 <br>
 
-<p>🚀 My dream is to become a world-class Robotics & AI Engineer.</p>
+<p>
+🚀 My dream is to become a world-class Robotics Engineer and build technology that helps people.
+</p>
 
 <br>
 
-<h3>💻 My Skills</h3>
+<h3>My Skills</h3>
 
-<br>
+<div class="skills">
 
-<p>✅ ESP32</p>
-<p>✅ Arduino</p>
-<p>✅ Robotics</p>
-<p>✅ Artificial Intelligence (AI)</p>
-<p>✅ Internet of Things (IoT)</p>
-<p>✅ Programming</p>
+<div class="skill">ESP32</div>
 
-</div>
+<div class="skill">Arduino</div>
 
-</section>
+<div class="skill">Robotics</div>
 
-<section id="projects">
+<div class="skill">AI</div>
 
-<h2>My Projects</h2>
+<div class="skill">IoT</div>
 
-<div class="projects">
-
-<div class="card">
-<h3>🚜 Smart Agriculture Rover</h3>
-<p>AI-powered farming robot.</p>
-</div>
-
-<div class="card">
-<h3>🚗 Bluetooth Robot Car</h3>
-<p>ESP32 Bluetooth controlled robot.</p>
-</div>
-
-<div class="card">
-<h3>🤖 Obstacle Avoiding Robot</h3>
-<p>Automatic obstacle detection robot.</p>
-</div>
-
-<div class="card">
-<h3>📡 GPS Vehicle Tracker</h3>
-<p>Real-time vehicle tracking system.</p>
-</div>
+<div class="skill">Programming</div>
 
 </div>
-
-</section>
-
-<section id="gallery">
-
-<h2>Gallery</h2>
-
-<div class="gallery">
-
-<div class="photo">📷 Robot Photo</div>
-<div class="photo">📷 Project Photo</div>
-<div class="photo">📷 Exhibition Photo</div>
-<div class="photo">📷 Build Process</div>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<div class="about-box">
-
-<p>GitHub</p>
-
-<h3>SenalRoboticsgit</h3>
-
-<br>
-
-<p>Sri Lanka 🇱🇰</p>
 
 </div>
 
@@ -278,9 +208,7 @@ margin-top:40px;
 
 <footer>
 
-<h3>© 2026 Senal Robotics</h3>
-
-<p>Made with ❤️ by Senal</p>
+© 2026 Senal Robotics
 
 </footer>
 
