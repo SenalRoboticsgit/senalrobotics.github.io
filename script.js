@@ -1,23 +1,40 @@
-// Senal Robotics JavaScript
+// ===============================
+// Senal Robotics Website Script
+// ===============================
 
-console.log("🤖 Senal Robotics Website Loaded Successfully!");
+// Website Loaded Message
+window.addEventListener("load", function () {
+    console.log("🤖 Senal Robotics Website Loaded Successfully!");
+});
 
-// Welcome Message
-window.onload = function () {
-    alert("🤖 Welcome to Senal Robotics!");
-};
+// Smooth scrolling for navigation
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
 
-// Smooth animation for project cards
+        const target = document.querySelector(this.getAttribute('href'));
+
+        if (target) {
+            target.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    });
+});
+
+// Project card animation
 const cards = document.querySelectorAll(".card");
 
-cards.forEach((card) => {
+cards.forEach(card => {
 
     card.addEventListener("mouseenter", () => {
-        card.style.transform = "translateY(-10px) scale(1.03)";
+        card.style.transform = "translateY(-10px)";
     });
 
     card.addEventListener("mouseleave", () => {
-        card.style.transform = "translateY(0px) scale(1)";
+        card.style.transform = "translateY(0)";
     });
 
 });
+
+console.log("🚀 JavaScript Ready!");
