@@ -2,8 +2,8 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    scroll-behavior:smooth;
     font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
 }
 
 body{
@@ -21,20 +21,20 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 50px;
-    box-shadow:0 0 15px rgba(0,217,255,.35);
+    padding:18px 40px;
+    box-shadow:0 0 15px rgba(0,217,255,.3);
     z-index:1000;
 }
 
 .logo{
+    color:#00d9ff;
     font-size:28px;
     font-weight:bold;
-    color:#00d9ff;
 }
 
 nav ul{
-    display:flex;
     list-style:none;
+    display:flex;
 }
 
 nav ul li{
@@ -45,7 +45,7 @@ nav ul li a{
     color:white;
     text-decoration:none;
     font-weight:bold;
-    transition:.3s;
+    transition:0.3s;
 }
 
 nav ul li a:hover{
@@ -58,29 +58,28 @@ nav ul li a:hover{
     justify-content:center;
     align-items:center;
     text-align:center;
-    background:linear-gradient(135deg,#071329,#0b2957,#071329);
-    padding:20px;
+    background:linear-gradient(135deg,#071329,#10386d);
 }
 
 .hero h1{
-    font-size:70px;
+    font-size:65px;
     margin-bottom:20px;
 }
 
 .hero p{
     font-size:24px;
-    margin-bottom:30px;
+    margin-bottom:25px;
 }
 
 .btn{
     display:inline-block;
     background:#00d9ff;
-    color:#000;
-    padding:15px 40px;
-    border-radius:40px;
+    color:black;
     text-decoration:none;
+    padding:14px 35px;
+    border-radius:30px;
     font-weight:bold;
-    transition:.3s;
+    transition:0.3s;
 }
 
 .btn:hover{
@@ -88,48 +87,63 @@ nav ul li a:hover{
 }
 
 section{
-    padding:90px 20px;
+    padding:100px 20px;
     max-width:1100px;
     margin:auto;
 }
 
 h2{
     text-align:center;
-    font-size:42px;
     color:#00d9ff;
     margin-bottom:40px;
+    font-size:40px;
 }
 
 .about-box{
     background:#10284d;
-    padding:35px;
-    border-radius:18px;
+    padding:30px;
+    border-radius:15px;
     text-align:center;
-    box-shadow:0 0 20px rgba(0,217,255,.20);
+}
+
+.skills{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:25px;
+}
+
+.skill{
+    background:#00d9ff;
+    color:black;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:bold;
 }
 
 .projects{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:25px;
 }
 
 .card{
     background:#10284d;
     padding:25px;
-    border-radius:18px;
-    transition:.3s;
-    box-shadow:0 0 15px rgba(0,217,255,.15);
+    border-radius:15px;
+    transition:0.3s;
+    box-shadow:0 0 15px rgba(0,217,255,.2);
 }
 
 .card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-10px);
     box-shadow:0 0 25px rgba(0,217,255,.4);
 }
 
 .card h3{
-    margin-bottom:15px;
     color:#00d9ff;
+    margin-bottom:15px;
 }
 
 .gallery{
@@ -140,81 +154,46 @@ h2{
 
 .photo{
     height:180px;
+    background:#1a3c66;
     border-radius:15px;
-    background:#18375d;
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:24px;
+    font-size:22px;
 }
 
 .contact-box{
     background:#10284d;
-    padding:35px;
-    border-radius:18px;
+    padding:30px;
+    border-radius:15px;
     text-align:center;
 }
 
 footer{
-    margin-top:50px;
-    padding:25px;
     background:#02101f;
     text-align:center;
+    padding:25px;
 }
 
 @media(max-width:768px){
 
 nav{
-    flex-direction:column;
-    padding:15px;
+flex-direction:column;
+padding:15px;
 }
 
 nav ul{
-    margin-top:10px;
-    flex-wrap:wrap;
-    justify-content:center;
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
 }
 
 .hero h1{
-    font-size:45px;
+font-size:42px;
 }
 
 .hero p{
-    font-size:20px;
+font-size:18px;
 }
 
-}
-.gallery {
-    text-align: center;
-    padding: 40px;
-}
-
-.gallery-container {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.gallery-card {
-    width: 300px;
-    background: #111;
-    padding: 15px;
-    border-radius: 15px;
-    transition: 0.3s;
-}
-
-.gallery-card:hover {
-    transform: scale(1.05);
-}
-
-.gallery-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.gallery-card h3 {
-    color: white;
 }
