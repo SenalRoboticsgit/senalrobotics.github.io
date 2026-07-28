@@ -93,7 +93,7 @@ h2{
 /* About */
 .about-box{
     background:white;
-    color:#111;
+    color:black;
     padding:30px;
     border-radius:15px;
 }
@@ -121,7 +121,7 @@ h2{
 
 .project-card{
     background:white;
-    color:#111;
+    color:black;
     padding:25px;
     border-radius:15px;
     transition:0.3s;
@@ -140,10 +140,11 @@ h2{
 
 .gallery-item{
     background:white;
-    color:#111;
+    color:black;
     padding:15px;
     border-radius:15px;
     text-align:center;
+    overflow: hidden;
 }
 
 .gallery-item img{
@@ -161,7 +162,7 @@ h2{
 /* Contact */
 .contact-box{
     background:white;
-    color:#111;
+    color:black;
     padding:30px;
     border-radius:15px;
     text-align:center;
