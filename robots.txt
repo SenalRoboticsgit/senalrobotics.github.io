@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ඔයාගේ-website-link.com/sitemap.xml
+Sitemap: https://senalroboticsgit.github.io/senalrobotics.github.io/sitemap.xml
